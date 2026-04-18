@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ind Ars Group</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="../styles/profiles.css">
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
 </head>
 <body>
@@ -14,7 +15,7 @@
 <nav class="navbar">
 	<!-- PERFIL DO GRUPO -->
 	<div class="logo-container">
-		<a href="index.html" class="logo-btn">
+		<a href="../index.html" class="logo-btn">
 		<img src="images/placeholders/user.jpg" alt="Logo" class="logo-icon">
 		<span class="group-name">Ind Ars Group</span>
 		</a>
@@ -29,7 +30,7 @@
 	<!-- BARRA DE BOTÕES -->
 	<ul class="nav-links">
 		<!-- BOTÃO DE INÍCIO -->
-		<li><a href="index.html">Início</a></li>
+		<li><a href="../index.html">Início</a></li>
 		
 		<!-- BOTÃO DROPDOWN DA GALERIA -->
 		<li class="dropdown">
@@ -46,7 +47,7 @@
 			<a href="#" class="dropbtn">Sobre <i class="fas fa-caret-down"></i></a>
 			<ul class="dropdown-content">
 				<li><a href="#">Grupo</a></li>
-				<li><a href="pages/profiles.html">Membros</a></li>
+				<li><a href="#">Membros</a></li>
 				<li><a href="#">Objetivo</a></li>
 			</ul>
 		</li>
@@ -74,43 +75,59 @@
 <!-- ================================================================================ ARTIGO -->
 <section id="artigo" class="parallax-article-section">
 <div class="container article-card">
-		
-		<!-- TÍTULO DO ARTIGO -->
-		<header class="article-header">
-			<h2>Nossa Essência</h2>
-			<p class="subtitle">Criatividade sem limites</p>
-		</header>
-		
-		<!-- SESSÃO DO ARTIGO -->
-		<section class="text-block">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam
-			, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		</section>
-		
-		<!-- SESSÃO DO ARTIGO -->
-		<section class="media-block">
-			<div class="img-side">
-			<img src="images/placeholders/image.webp" alt="Arte">
-		</div>
-		<div class="text-side">
-			<h3>Visão Geral</h3>
-			<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-			 deserunt mollit anim id est laborum.</p>
-		</div>
-		</section>
-		
-		<!-- SESSÃO DO ARTIGO -->
-		<section class="media-block reverse">
-			<div class="img-side">
-				<img src="images/placeholders/image.webp" alt="Arte">
+<div class="member-list">
+<!-- INÍCIO DA PÁGINA -->
+
+<a href="profile.html?member=aikdeino" class="member-card align-left">
+	<div class="member-banner-bg" style="background-image: url('../images/placeholders/banner.png');"></div>
+	<div class="member-content">
+		<img src="../images/placeholders/user.jpg" alt="Icone" class="member-avatar">
+		<div class="member-info">
+			<h3>Aik de Ino</h3>
+			<p>Descrição sobre o membro.</p>
+			<div class="member-tags">
+				<span class="tag">Tag 1</span>
+				<span class="tag">Tag 2</span>
+				<span class="tag">Tag 3</span>
 			</div>
-			<div class="text-side">
-				<h3>O Coletivo</h3>
-				<p>Sed ut perspiciatis unde omnis iste natus error sit 
-				voluptatem accusantium doloremque laudantium.</p>
+		</div>
+	</div>
+</a>
+
+<a href="profile.html?member=valter_gnomio" class="member-card align-left">
+	<div class="member-banner-bg" style="background-image: url('../images/placeholders/banner.png');"></div>
+	<div class="member-content">
+		<img src="../images/placeholders/user.jpg" alt="Icone" class="member-avatar">
+		<div class="member-info">
+			<h3>Valter Gnômio</h3>
+			<p>Descrição sobre o membro.</p>
+			<div class="member-tags">
+				<span class="tag">Tag 1</span>
+				<span class="tag">Tag 2</span>
+				<span class="tag">Tag 3</span>
 			</div>
-		</section>
+		</div>
+	</div>
+</a>
+
+<a href="profile.html?member=aikdeino" class="member-card align-left">
+	<div class="member-banner-bg" style="background-image: url('../images/placeholders/banner.png');"></div>
+	<div class="member-content">
+		<img src="../images/placeholders/user.jpg" alt="Icone" class="member-avatar">
+		<div class="member-info">
+			<h3>Nome do Membro</h3>
+			<p>Descrição sobre o membro.</p>
+			<div class="member-tags">
+				<span class="tag">Tag 1</span>
+				<span class="tag">Tag 2</span>
+				<span class="tag">Tag 3</span>
+			</div>
+		</div>
+	</div>
+</a>
+
 <!-- FIM DO CONTEÚDO DA PÁGINA -->
+</div>
 </div>
 </section>
 </main>
