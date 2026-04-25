@@ -1,139 +1,222 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
+
+
+<!-- ##################################################### HEAD ################################################# -->
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ind Ars Group</title>
-	<link rel="stylesheet" href="style.css">
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
-</head>
-<body>
-
-<!-- ================================================================================ BARRA DE NAVEGAÇÃO -->
-<header class="main-header">
-<nav class="navbar">
-	<!-- PERFIL DO GRUPO -->
-	<div class="logo-container">
-		<a href="index.html" class="logo-btn">
-		<img src="images/placeholders/user.jpg" alt="Logo" class="logo-icon">
-		<span class="group-name">Ind Ars Group</span>
-		</a>
-	</div>
+	<meta name="description" content="Ind Ars é um (...).">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	
-	<!-- MOBILE DROPDOWN -->
-	<input type="checkbox" id="menu-toggle" class="menu-toggle">
-	<label for="menu-toggle" class="hamburger">
-	<span></span><span></span><span></span>
-	</label>
+	<link rel="stylesheet" href="styles/default.css">
+	<link rel="stylesheet" href="styles/about.css">
+</head>
 
-	<!-- BARRA DE BOTÕES -->
-	<ul class="nav-links">
-		<!-- BOTÃO DE INÍCIO -->
-		<li><a href="index.html">Início</a></li>
-		
-		<!-- BOTÃO DROPDOWN DA GALERIA -->
-		<li class="dropdown">
-			<a href="#" class="dropbtn">Projetos <i class="fas fa-caret-down"></i></a>
-			<ul class="dropdown-content">
-				<li><a href="#">Artes</a></li>
-				<li><a href="#">Quadrinhos</a></li>
-				<li><a href="#">Animações</a></li>
-				<li><a href="#">Jogos</a></li>
+
+
+<!-- ##################################################### BODY ################################################# -->
+<body>
+<!-- ==================================================================================================== HEADER -->
+<header class="nav-header">
+<!-- MENU DE NAVEGAÇÃO -->
+	<nav class="header-nav">
+		<!-- LOGO DA PÁGINA -->
+		<div>
+			<a href="index.html">
+				<img src="images/placeholders/user.jpg" alt="MAIN PAGE LOGO" id="page-logo">
+				<span id="page-title">Ind Ars Group</span>
+			</a>
+		</div>
+		<!-- BOTÕES DE NAVEGAÇÃO -->
+		<div class="menu-container">
+			<span class="menu-icon"> - </span>
+			<ul>
+				<!-- TORNAR UM DROPDOWN PARA MOBILE -->
+				<li><a href="#about-section"   > Sobre    </a></li>
+				<li><a href="#members-section" > Membros  </a></li>
+				<li><a href="#projects-section"> Projetos </a></li>
+				<li><a href="#social-section"  > Redes    </a></li>
 			</ul>
-		</li>
-		<!-- BOTÃO DROPDOWN DO SOBRE NÓS -->
-		<li class="dropdown">
-			<a href="#" class="dropbtn">Sobre <i class="fas fa-caret-down"></i></a>
-			<ul class="dropdown-content">
-				<li><a href="#">Grupo</a></li>
-				<li><a href="pages/profiles.html">Membros</a></li>
-				<li><a href="#">Objetivo</a></li>
-			</ul>
-		</li>
-		<!-- BOTÃO DO PERFIL -->
-		<!-- <li><a href="#" class="profile-btn"><i class="fas fa-user-circle"></i> Perfil</a></li> -->
-	</ul>
-</nav>
+		</div>
+	</nav>
 </header>
 
-<!-- ########################################################### MAIN ####################################################### -->
+<!-- ==================================================================================================== MAIN -->
 <main>
-
-<!-- ================================================================================ HERO BANNER -->
-<section class="hero-banner pos-esquerda">
-	<div class="banner-overlay">
-		<div class="text-box">
-		<h1>Ind Ars Group</h1>
-		<p>[UMA BREVE DESCRIÇÃO DO GRUPO]</p>
-		<!-- <a href="#artigo" class="cta-button">Explorar</a> -->
-		</div>
+<!-- HERO BANNER -->
+<section class="hero-banner">
+	<div class="hero-banner-content">
+		<h1>Ind Ars</h1>
+		<p>Pequena descrição da página.</p>
+		<a href="#"> Ver Mais </a>
 	</div>
 </section>
 
-<!-- INÍCIO DO CONTEÚDO DA PÁGINA  -->
-<!-- ================================================================================ ARTIGO -->
-<section id="artigo" class="parallax-article-section">
-<div class="container article-card">
-		
-		<!-- TÍTULO DO ARTIGO -->
-		<header class="article-header">
-			<h2>Nossa Essência</h2>
-			<p class="subtitle">Criatividade sem limites</p>
+<!-- BARRA DE SELEÇÃO DE CONTEÚDO -->
+<nav class="content-selector">
+	<ul>
+		<li><a href="#about-section"   > Sobre    </a></li>
+		<li><a href="#members-section" > Membros  </a></li>
+		<li><a href="#projects-section"> Projetos </a></li>
+		<li><a href="#social-section"  > Redes    </a></li>
+	</ul>
+</nav>
+
+<!-- ARTIGOS -->
+<section id="about-section" class="section-parallax">
+	<article class="about-article">
+		<!-- TÍTULO PRINCIPAL DO ARTIGO -->
+		<header class="article-banner">
+			<h2>
+				Sobre o Ind Ars
+			</h2>
 		</header>
-		
-		<!-- SESSÃO DO ARTIGO -->
-		<section class="text-block">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam
-			, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		</section>
-		
-		<!-- SESSÃO DO ARTIGO -->
-		<section class="media-block">
-			<div class="img-side">
-			<img src="images/placeholders/image.webp" alt="Arte">
-		</div>
-		<div class="text-side">
-			<h3>Visão Geral</h3>
-			<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-			 deserunt mollit anim id est laborum.</p>
-		</div>
-		</section>
-		
-		<!-- SESSÃO DO ARTIGO -->
-		<section class="media-block reverse">
-			<div class="img-side">
-				<img src="images/placeholders/image.webp" alt="Arte">
+		<!-- SESSÕES DO ARTIGO -->
+		<section class="article-body">
+			<div class="article-left">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+					ex ea commodo consequat.
+				</p>
 			</div>
-			<div class="text-side">
-				<h3>O Coletivo</h3>
-				<p>Sed ut perspiciatis unde omnis iste natus error sit 
-				voluptatem accusantium doloremque laudantium.</p>
+			<figure class="article-right">
+				<img src="images/placeholders/image.webp" alt="image">
+			</figure>
+		</section>
+		<section class="article-body">
+			<figure class="article-left">
+				<img src="images/placeholders/image.webp" alt="image">
+			</figure>
+			<div class="article-right">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+					ex ea commodo consequat.
+				</p>
 			</div>
 		</section>
-<!-- FIM DO CONTEÚDO DA PÁGINA -->
-</div>
+	</article>
+<!-- --------------------------------------------------------------------------------------------------------------- -->
+	<article class="about-article">
+		<!-- TÍTULO PRINCIPAL DO ARTIGO -->
+		<header class="article-banner">
+			<h2>
+				Sobre o Ind Ars
+			</h2>
+		</header>
+		<!-- SESSÕES DO ARTIGO -->
+		<section class="article-body">
+			<figure class="article-left">
+				<img src="images/placeholders/image.webp" alt="image">
+			</figure>
+			<div class="article-right">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+					ex ea commodo consequat.
+				</p>
+			</div>
+		</section>
+	</article>
+<!-- --------------------------------------------------------------------------------------------------------------- -->
 </section>
+
+
+<!-- SESSÃO DE MEMBROS -->
+<section id="members-section" class="section-parallax">
+	<!-- ARTIGO DO MEMBRO (USAR O article PARA POR UM BANNER DE FUNDO) -->
+	<article class="member-article">
+	<a href="members/member-profile.html?member=member-name">
+		<!-- ICONE DO MEMBRO -->
+		<header class="member-icon">
+			<img src="" alt="member-static-icon">
+			<img src="" alt="member-hover-icon" aria-hidden="true">
+		</header>
+		<!-- DESCRIÇÃO DO MEMBRO -->
+		<section class="member-info">
+			<h2 class="member-name"> Nome do Membro </h2>
+			<p class="member-description"> Descrição Rápida </p>
+		</section>
+		<!-- TAGS DO MEMBRO -->
+		<footer class="member-tags">
+				<span>Tag 1</span>
+				<span>Tag 2</span>
+				<span>Tag 3</span>
+		</footer>
+	</a>
+	</article>
+</section>
+
+
+<section id="projects-section" class="section-parallax">
+	<!-- TODO: PARA FAZER -->
+	<!-- PENSE NA Steam, Itch.io e a GOG-->
+	<article class="project-article project-main-banner">
+	<a href="projects/project-profile.html?project=project-name" class="project-hover-banner">
+		<header class="project-title">
+			<h2>
+				Título do Projeto
+			</h2>
+		</header>
+		<section class="project-description"><!-- SÓ APARECE QUANDO O MOUSE ESTÁ EM CIMA -->
+			<p>
+				Uma breve descrição do projeto.
+			</p>
+		</section class="project-tags">
+		<footer>
+			<span class="project-tag"> Tag 1 </span>
+		</footer>
+	</a>
+	</article>
+</section>
+
+<section id="social-section" class="social-banner section-parallax">
+	<!-- UM BANNER DE FUNDO COM ICONE DA REDE DE UM LADO E DESCRIÇÃO DO OUTRO -->
+	<article>
+	<!-- BOTÃO PARA IR PARA A REDE SOCIAL -->
+	<a href="#" class="social-link-banner">
+		<!-- ICONE DA REDE -->
+		<div class="social-icon">
+			<img src="social/icon.png" alt="Icone da rede social">
+		</div>
+		<!-- DESCRIÇÃO DA REDE -->
+		<div class="social-description">
+			<h2> Nome da Rede </h2>
+			<span> @ind_ars_group</span>
+			<p> Descrição da rede</p>
+		</div>
+	</a>
+	</article>
+</section>
+
 </main>
 
-<!-- ================================================================================ RODAPÉ -->
-
+<!-- ==================================================================================================== FOOTER -->
 <footer class="main-footer">
-<div class="footer-container">
-	<div class="footer-info">
-		<h3>Ind Ars Group</h3>
-	<p><i class="fas fa-envelope"></i> contato@exemplo.com</p>
+	<!-- SEPARAR CONTEÚDOS EM DUAS OU TRÊS COLUNAS -->
+	<div>
+		<p>RODAPÉ</p>
+		<p>DA PÁGINA</p>
 	</div>
-	<div class="footer-socials">
-		<a href="#"><i class="fab fa-instagram"></i></a>
-		<a href="#"><i class="fab fa-x-twitter"></i></a>
-		<a href="#"><i class="fab fa-youtube"></i></a>
+	<div>
+		<p>RODAPÉ</p>
+		<p>DA PÁGINA</p>
 	</div>
+	<div>
+		<p>RODAPÉ</p>
+		<p>DA PÁGINA</p>
 	</div>
-	<!-- COPYRIGHT -->
-	<div class="footer-bottom">
-		<p>&copy; 2024 Nome do Grupo - Todos os direitos reservados.</p>
-</div>
 </footer>
+
+<!-- ##################################################### SCRIPT ################################################# -->
+<script src="script.js"></script>
+
+
+
 
 </body>
 </html>
