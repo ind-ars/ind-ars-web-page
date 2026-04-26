@@ -1,8 +1,10 @@
 :root
 {
-	--nav-bar-color:          #89B6E8;
-	--content-selector-color: #89B6E8;
-	--background-color:       #4A6084;
+	--color1: white    /* Branco       */;
+	--color2: #375a9e  /* Azul Médio   */;
+	--color3: #29393e  /* Azul Marinho */;
+	--color4: #bd4a48  /* Vermelho     */;
+	--color5: #242733  /* Azul Dark    */;
 }
 
 /* RESET GERAL */
@@ -50,19 +52,19 @@ section
 }
 ::-webkit-scrollbar-thumb
 {
-	background-color: #ccc;
+	background-color: var(--color3);
 	border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:hover
 {
-	background-color: #aaa;
+	background-color: var(--color2);
 }
 
 /* ========================================================================================== NAV BAR */
 #page-logo
 {
-	max-width:  40px;
-	max-height: 40px;
+	max-width:  30px;
+	max-height: 30px;
 }
 
 #page-title
@@ -81,7 +83,8 @@ section
 	position: sticky;
 	top:      0;
 	z-index:  1000;
-	background-color: var(--nav-bar-color);
+	background-color: var(--color1);
+	color:            var(--color2);
 }
 
 .header-nav
@@ -96,6 +99,21 @@ section
 {
 	display: flex;
 	gap:     20px;
+	font-size: 20px;
+}
+
+.header-nav a
+{
+	padding: 4px 5px 4px 5px;
+	border-radius: 4px;
+	transition: color 0.2s;
+	transition: background-color 0.2s;
+}
+
+.header-nav a:hover
+{
+	color: var(--color1);
+	background-color: var(--color2);
 }
 
 /* DROPDOWN */
@@ -104,9 +122,9 @@ section
 	.menu-icon
 	{
 		display: flex;
-		color: white;
-		background-color: black;
-		border-radius: 4px;
+		color: var(--color1);
+		background-color: var(--color3);
+		border-radius: 2px;
 		padding: 10px 15px 10px 15px;
 		margin:  0px 0px 0px 15px;
 	}
@@ -125,8 +143,10 @@ section
 		right:            0;
 		min-width:        150px;
 		flex-direction:   column;
-		background-color: #eee;
+		background-color: var(--color3);
+		color:            var(--color1);
 		text-align:       center;
+		padding: 8px 0px 8px 0px;
 	}
 	
 	.menu-container:hover ul
@@ -155,10 +175,22 @@ section
 
 .hero-banner-content
 {
-	color: white;
-	background-color: black;
+	color: var(--color1);
+	background-color: var(--color4);
 	padding: min(40px, 8%) min(60px, 12%) min(40px, 8%) min(60px, 12%);
 	border-radius: 5px;
+}
+
+.hero-banner-content p
+{
+	padding-bottom: 12px;
+}
+.hero-banner-content a
+{
+	color: var(--color1);
+	padding: 5px;
+	border-radius: 4px;
+	background-color: var(--color3);
 }
 
 /* MOBILE BANNER */
@@ -167,7 +199,7 @@ section
 	.hero-banner
 	{
 		height: 40vh;
-		background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.05)), url('mobile-main-banner.jpg');
+		background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.05)), url('../images/placeholders/image.png');
 		margin: 0;
 		justify-content: center;
 		padding: 0;
@@ -175,8 +207,7 @@ section
 	
 	.hero-banner-content
 	{
-		color: white;
-		background-color: black;
+		color: var(--color1);
 		padding: min(30px, 10%);
 		border-radius: 5px;
 	}
@@ -186,7 +217,7 @@ section
 
 .content-selector
 {
-	background-color: var(--content-selector-color);
+	background-color: var(--color3);
 	width: 100%;             /* Garante que a barra ocupe a largura total */
 	display: flex;           /* Ativa o flexbox no container principal */
 	justify-content: center; /* Centraliza a <ul> horizontalmente */
@@ -201,7 +232,8 @@ section
 	padding: 10px;
 	border-radius: 5px;
 	margin: 5px;
-	background-color: #b5b5b5;
+/*	background-color: var(--color4); */
+	color: var(--color1);
 }
 
 .content-selector a
@@ -210,14 +242,15 @@ section
 	padding: 10px;
 	border-radius: 8px;
 	text-transform: uppercase;
+/*	background-color: var(--color4); */
 	transition: color 0.1s;
 	transition: background-color 0.2s;
 }
 
 .content-selector a:hover
 {
-	color: black;
-	background-color: white;
+	color: var(--color3);
+	background-color: var(--color1);
 }
 
 @media (max-width: 700px)
@@ -235,7 +268,7 @@ main > .section-parallax
 	background-attachment: fixed;
 	background-position:   center;
 	background-size:       cover;
-	background-color:      var(--background-color);
+	background-color:      var(--color5);
 	
 	display: flex;
 	justify-content: center;
@@ -270,8 +303,8 @@ article {
 
 .main-footer
 {
-	color:            white;
-	background-color: black;
+	color:            var(--color1);
+	background-color: var(--color3);
 	justify-content:  space-between;
 	align-items:      center;
 	display:          flex;
