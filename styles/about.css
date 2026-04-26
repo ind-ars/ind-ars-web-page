@@ -29,7 +29,6 @@
 }
 
 .article-banner {
-	background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url('banner-artigo.jpg');
 	background-size: cover;
 	background-position: center;
 	height: 200px;
@@ -38,6 +37,12 @@
 	justify-content: center;
 	color: white;
 	text-align: center;
+}
+
+/* USE IDs PARA DAR A IMAGEM CERTA PARA CADA BANNER */
+.article-banner
+{
+		background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url('../images/placeholders/article-banner.png');
 }
 
 .article-banner h2 {
@@ -81,7 +86,7 @@
 	margin-bottom: 40px;
 }
 
-@media (max-width: 600px)
+@media (max-width: 700px)
 {
 	#page-title
 	{
@@ -96,6 +101,11 @@
 		justify-content: center;
 		color: white;
 		text-align: center;
+	}
+	
+	.article-banner h2
+	{
+		font-size: 34px;
 	}
 	
 	.article-body

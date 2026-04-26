@@ -1,3 +1,10 @@
+:root
+{
+	--nav-bar-color:          #89B6E8;
+	--content-selector-color: #89B6E8;
+	--background-color:       #4A6084;
+}
+
 /* RESET GERAL */
 *
 {
@@ -74,7 +81,7 @@ section
 	position: sticky;
 	top:      0;
 	z-index:  1000;
-	background-color: #ddf;
+	background-color: var(--nav-bar-color);
 }
 
 .header-nav
@@ -92,7 +99,7 @@ section
 }
 
 /* DROPDOWN */
-@media (max-width: 600px)
+@media (max-width: 700px)
 {
 	.menu-icon
 	{
@@ -143,7 +150,7 @@ section
 	
 	padding: 0 20%;
 	
-	background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.1)), url('desktop-main-banner.jpg');
+	background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.1)), url('../images/placeholders/banner2.png');
 }
 
 .hero-banner-content
@@ -155,7 +162,7 @@ section
 }
 
 /* MOBILE BANNER */
-@media (max-width: 600px)
+@media (max-width: 700px)
 {
 	.hero-banner
 	{
@@ -179,7 +186,7 @@ section
 
 .content-selector
 {
-	background-color: #ccc;
+	background-color: var(--content-selector-color);
 	width: 100%;             /* Garante que a barra ocupe a largura total */
 	display: flex;           /* Ativa o flexbox no container principal */
 	justify-content: center; /* Centraliza a <ul> horizontalmente */
@@ -213,7 +220,7 @@ section
 	background-color: white;
 }
 
-@media (max-width: 600px)
+@media (max-width: 700px)
 {
 	.content-selector
 	{
@@ -228,7 +235,7 @@ main > .section-parallax
 	background-attachment: fixed;
 	background-position:   center;
 	background-size:       cover;
-	background-color:      lightgrey;
+	background-color:      var(--background-color);
 	
 	display: flex;
 	justify-content: center;
@@ -250,7 +257,7 @@ article {
 	padding-bottom: 0;
 }
 
-@media (max-width: 600px)
+@media (max-width: 700px)
 {
 	article
 	{
