@@ -5,132 +5,119 @@
 	padding-top:    0;
 	padding-bottom: 0;
 }
+/* ========================================================================================== MEMBERS SECTION */
 
 #members-section
 {
-	display: flex;
 	flex-direction: column;
-	align-items: center;
-	min-height: auto;
-	background-color: /* PONHA O PARALLAX AQUI */;
-	
 }
 
-/* Container do card */
-.member-article
+.members-banner
 {
-	width: 70%;
-	max-width: 1200px;
-	overflow: hidden;
-}
-
-.member-article:hover
-{
-	transform: translateY(-5px);
-}
-
-/* O link que carrega o banner de fundo */
-.member-article a
-{
-	display: grid;
-	grid-template-columns: 80px 1fr;
-	grid-template-rows: auto auto;
-	gap: 15px;
-	padding: 20px;
-	text-decoration: none;
-	color: white;
-	width: 100%;
-	box-sizing: border-box;
-	background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.25)), url('../images/placeholders/article-banner.png');
+	font-size: 42px;
 	background-size: cover;
 	background-position: center;
-}
-
-/* Ícone à esquerda */
-.member-icon
-{
-	grid-row: 1 / 2;
-	grid-column: 1 / 2;
+	height: 200px;
 	display: flex;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
 	align-items: center;
 	justify-content: center;
+	color: var(--color1);
+	text-align: center;
+	background-color: var(--color3);
+}
+
+.member-article
+{
+	display: column;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 40px;
+	padding: 60px 40px;
+	background: white;
+	width: 70%;
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: 0;
+	box-shadow: 0 30px 25px rgba(0,0,0,0.2);
+}
+
+.member-article a
+{
+	display: flex;
+	border-radius: 8px;
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
+	gap: 10px;
+	padding: 15px;
+	transition: transform 0.3s ease;
+}
+
+.member-article a:hover
+{
+	transform: translateY(-5px);
+	background-color: var(--color3);
+	color: var(--color1);
+}
+
+.member-icon
+{
+	width:  250px;
+	height: 180px;
+	overflow: hidden;
+	border-radius: 4px;
 }
 
 .member-icon img
 {
-	width: 70px;
-	height: 70px;
-	border-radius: 4px;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
-	border: 2px solid rgba(255, 255, 255, 0.5);
-}
-
-/* Informações à direita */
-.member-info
-{
-	grid-row: 1 / 2;
-	grid-column: 2 / 3;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 }
 
 .member-name
 {
+	font-size: 1.5rem;
+	text-transform: uppercase;
 	margin: 0;
-	font-size: 1.4rem;
-	font-weight: bold;
 }
 
-.member-description
-{
-	margin: 5px 0 0 0;
-	font-size: 0.9rem;
-	opacity: 0.9;
-	
-	word-break: break-word;
-	overflow: hidden;
-	display: -webkit-box;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical;
-}
+/* ========================================================================================== RESPONSIVIDADE (MOBILE) */
 
-/* Tags embaixo (ocupando as duas colunas ou apenas a direita) */
-.member-tags
+@media (max-width: 700px)
 {
-	grid-row: 2 / 3;
-	grid-column: 1 / 3; /* Faz as tags atravessarem o card todo */
-	display: flex;
-	gap: 8px;
-	flex-wrap: wrap;
-	margin-top: 10px;
-}
-
-.member-tags span
-{
-	background: rgba(255, 255, 255, 0.2);
-	backdrop-filter: blur(5px);
-	padding: 4px 12px;
-	border-radius: 20px;
-	font-size: 0.75rem;
-	border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-@media(max-width: 700px)
-{
-	.member-article 
+	.member-article
 	{
 		width: 95%;
-		background-color: blue;
+		grid-template-columns: 1fr;
+		padding: 30px 15px;
+		gap: 20px;
+    }
+	
+	.member-article a
+    {
+		flex-direction: column;
+    }
+	
+	.member-icon
+	{
+		width: 120px;
+		height: 120px;
 	}
-
+	
+	.member-name
+	{
+		font-size: 1.2rem;
+	}
+	
+	.members-banner
+	{
+		font-size: 32px;
+		width: 95%;
+	}
 }
-
-
-
-
-
-
-
-
-

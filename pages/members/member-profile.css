@@ -1,0 +1,295 @@
+:root
+{
+	--color1: white    /* Branco       */;
+	--color2: #375a9e  /* Azul Médio   */;
+	--color3: #29393e  /* Azul Marinho */;
+	--color4: #bd4a48  /* Vermelho     */;
+	--color5: #242733  /* Azul Dark    */;
+}
+
+/* RESET GERAL */
+*
+{
+	margin:  0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;         /* O link herda a cor do texto pai */
+}
+
+ul {
+	list-style: none;
+}
+
+/* ----------------------------------------------------------------------------------------------- SCROLL BAR */
+
+html
+{
+	scroll-behavior: smooth;
+}
+
+section
+{
+	scroll-margin-top: 80px; 
+}
+
+::-webkit-scrollbar
+{
+	width: 8px;
+}
+/* 2. O "trilho" da barra (a parte de trás) */
+::-webkit-scrollbar-track
+{
+	background: var(--bg-scrollbar);
+}
+::-webkit-scrollbar-thumb
+{
+	background-color: var(--color3);
+	border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover
+{
+	background-color: var(--color2);
+}
+
+/* ========================================================================================== NAV BAR */
+#page-logo
+{
+	max-width:  30px;
+	max-height: 30px;
+}
+
+#page-title
+{
+	font-size:  32px;
+	text-align: center;
+}
+
+.menu-icon
+{
+	display: none;
+}
+
+.nav-header
+{
+	position: sticky;
+	top:      0;
+	z-index:  1000;
+	background-color: var(--color1);
+	color:            var(--color2);
+}
+
+.header-nav
+{
+	display:         flex;
+	justify-content: space-between;
+	align-items:     center;
+	padding:         1rem 2rem;
+}
+
+.header-nav ul
+{
+	display: flex;
+	gap:     20px;
+	font-size: 20px;
+}
+
+.header-nav a
+{
+	padding: 4px 5px 4px 5px;
+	border-radius: 4px;
+	transition: color 0.2s;
+	transition: background-color 0.2s;
+}
+
+.header-nav a:hover
+{
+	color: var(--color1);
+	background-color: var(--color2);
+}
+
+/* DROPDOWN */
+@media (max-width: 700px)
+{
+	.menu-container
+	{
+		position: relative;
+		cursor:   pointer;
+	}
+	
+	.menu-container ul
+	{
+		font-size: 18px;
+	}
+}
+
+/* ========================================================================================== HERO/MAIN BANNER*/
+.hero-banner
+{
+	height:          60vh;
+	min-height:      200px;
+	display:         flex;
+	align-items:     center;
+	justify-content: flex-start; /* flex-start center flex-end*/
+	
+	background-size:     cover;
+	background-position: center;
+	background-repeat:   no-repeat;
+	
+	padding: 0 20%;
+	
+	background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.1)), url('../images/placeholders/banner2.png');
+}
+
+.hero-banner-content
+{
+	color: var(--color1);
+	background-color: var(--color4);
+	padding: min(40px, 8%) min(60px, 12%) min(40px, 8%) min(60px, 12%);
+	border-radius: 5px;
+}
+
+.hero-banner-content p
+{
+	padding-bottom: 12px;
+}
+.hero-banner-content a
+{
+	color: var(--color1);
+	padding: 5px;
+	border-radius: 4px;
+	background-color: var(--color3);
+}
+
+/* MOBILE BANNER */
+@media (max-width: 700px)
+{
+	.hero-banner
+	{
+		height: 40vh;
+		background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.05)), url('../images/placeholders/image.png');
+		margin: 0;
+		justify-content: center;
+		padding: 0;
+	}
+	
+	.hero-banner-content
+	{
+		color: var(--color1);
+		padding: min(30px, 10%);
+		border-radius: 5px;
+	}
+}
+
+/* ========================================================================================== CONTENT SELECTOR */
+
+.content-selector
+{
+	background-color: var(--color3);
+	width: 100%;             /* Garante que a barra ocupe a largura total */
+	display: flex;           /* Ativa o flexbox no container principal */
+	justify-content: center; /* Centraliza a <ul> horizontalmente */
+	padding: 0;
+	
+}
+
+.content-selector ul
+{
+	display: flex;           /* Coloca os <li> um ao lado do outro */
+	gap: 30px;               /* Espaçamento entre os itens do menu */
+	padding: 10px;
+	border-radius: 5px;
+	margin: 5px;
+	color: var(--color1);
+}
+
+.content-selector a
+{
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 8px;
+	text-transform: uppercase;
+	transition: color 0.1s;
+	transition: background-color 0.2s;
+}
+
+.content-selector a:hover
+{
+	color: var(--color3);
+	background-color: var(--color1);
+}
+
+/* ========================================================================================== MAIN */
+main > .section-parallax
+{
+	width: 100%;
+	background-attachment: fixed;
+	background-position:   center;
+	background-size:       cover;
+	background-color:      var(--color5);
+	
+	display: flex;
+	justify-content: center;
+}
+
+article {
+	background: white;
+	overflow: hidden;
+	box-shadow: 0 30px 25px rgba(0,0,0,0.2);
+	
+	display: block;
+	width: 70%;
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+@media (max-width: 700px)
+{
+	article
+	{
+		width: 95%;
+		/*max-width: 500px;*/
+	}
+}
+
+/* ========================================================================================== FOOTER */
+
+.main-footer
+{
+	color:            var(--color1);
+	background-color: var(--color3);
+	justify-content:  space-between;
+	align-items:      center;
+	display:          flex;
+	border-top:       1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

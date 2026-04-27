@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="styles/default.css">
 	<link rel="stylesheet" href="styles/about.css">
 	<link rel="stylesheet" href="styles/members.css">
+	<link rel="stylesheet" href="styles/projects.css">
 </head>
 
 
@@ -26,10 +27,7 @@
 	<nav class="header-nav">
 		<!-- LOGO DA PÁGINA -->
 		<div>
-			<a href="index.html">
-				<img src="images/placeholders/user.jpg" alt="MAIN PAGE LOGO" id="page-logo">
-				<span id="page-title">Ind Ars Group</span>
-			</a>
+			<a href="index.html" id="page-title">Ind Ars Group</a>
 		</div>
 		<!-- BOTÕES DE NAVEGAÇÃO -->
 		<div class="menu-container">
@@ -131,108 +129,132 @@
 
 <!-- SESSÃO DE MEMBROS -->
 <section id="members-section" class="section-parallax">
-	<!-- ARTIGO DO MEMBRO (USAR O article PARA POR UM BANNER DE FUNDO) -->
-	<article class="member-article">
+
+<div class="members-banner">
+	<h2>
+		Membros
+	</h2>
+</div>
+
+<!-- ARTIGO DO MEMBRO (USAR O article PARA POR UM BANNER DE FUNDO) -->
+<article class="member-article">
+
 	<a href="members/member-profile.html?member=member-name">
 		<!-- ICONE DO MEMBRO -->
-		<header class="member-icon">
+		<figure class="member-icon">
 			<img src="images/placeholders/user.jpg" alt="member-icon">
 			<!-- <img src="" alt="member-hover-icon" aria-hidden="true"> -->
-		</header>
-		<!-- DESCRIÇÃO DO MEMBRO -->
-		<section class="member-info">
+		</figure>
+		<div>
 			<h2 class="member-name"> Aik de Ino </h2>
-			<p class="member-description"> 
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-				do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+				eiusmod tempor incididunt ut labore et dolore magna aliqua.
 			</p>
-		</section>
-		<!-- TAGS DO MEMBRO -->
-		<footer class="member-tags">
-				<span>Tag 1</span>
-				<span>Tag 2</span>
-				<span>Tag 3</span>
-		</footer>
+		</div>
 	</a>
-	</article>
 	
-	
-	
-	<!-- ARTIGO DO MEMBRO (USAR O article PARA POR UM BANNER DE FUNDO) -->
-	<article class="member-article">
 	<a href="members/member-profile.html?member=member-name">
 		<!-- ICONE DO MEMBRO -->
-		<header class="member-icon">
+		<figure class="member-icon">
 			<img src="images/placeholders/user.jpg" alt="member-icon">
 			<!-- <img src="" alt="member-hover-icon" aria-hidden="true"> -->
-		</header>
-		<!-- DESCRIÇÃO DO MEMBRO -->
-		<section class="member-info">
-			<h2 class="member-name"> Aik de Ino </h2>
-			<p class="member-description"> 
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-				do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		</figure>
+		<div>
+			<h2 class="member-name"> Valter Gnômio </h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+				eiusmod tempor incididunt ut labore et dolore magna aliqua.
 			</p>
-		</section>
-		<!-- TAGS DO MEMBRO -->
-		<footer class="member-tags">
-				<span>Tag 1</span>
-				<span>Tag 2</span>
-				<span>Tag 3</span>
-		</footer>
+		</div>
 	</a>
-	</article>
 	
-	
-	
-	<!-- ARTIGO DO MEMBRO (USAR O article PARA POR UM BANNER DE FUNDO) -->
-	<article class="member-article">
 	<a href="members/member-profile.html?member=member-name">
 		<!-- ICONE DO MEMBRO -->
-		<header class="member-icon">
+		<figure class="member-icon">
 			<img src="images/placeholders/user.jpg" alt="member-icon">
 			<!-- <img src="" alt="member-hover-icon" aria-hidden="true"> -->
-		</header>
-		<!-- DESCRIÇÃO DO MEMBRO -->
-		<section class="member-info">
-			<h2 class="member-name"> Aik de Ino </h2>
-			<p class="member-description"> 
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-				do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		</figure>
+		<div>
+			<h2 class="member-name"> COIPAneko </h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+				eiusmod tempor incididunt ut labore et dolore magna aliqua.
 			</p>
-		</section>
-		<!-- TAGS DO MEMBRO -->
-		<footer class="member-tags">
-				<span>Tag 1</span>
-				<span>Tag 2</span>
-				<span>Tag 3</span>
-		</footer>
+		</div>
 	</a>
-	</article>
-	
+
+</article>	
 </section>
 
 
 <section id="projects-section" class="section-parallax">
-	<!-- TODO: PARA FAZER -->
-	<!-- PENSE NA Steam, Itch.io e a GOG-->
-	<article class="project-article project-main-banner">
-	<a href="projects/project-profile.html?project=project-name" class="project-hover-banner">
-		<header class="project-title">
-			<h2>
+
+<div class="projects-banner">
+	<h2>
+		Projetos
+	</h2>
+</div>
+<article class="project-article">
+	
+	<a href="projects/project-profile.html?project=project-name">
+		<img src="images/placeholders/image.png" alt="img" class="project-icon">
+		<section class="project-description"><!-- SÓ APARECE QUANDO O MOUSE ESTÁ EM CIMA -->
+			<h2 class="project-name">
 				Título do Projeto
 			</h2>
-		</header>
-		<section class="project-description"><!-- SÓ APARECE QUANDO O MOUSE ESTÁ EM CIMA -->
 			<p>
-				Uma breve descrição do projeto.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+				ex ea commodo consequat.
 			</p>
-		</section class="project-tags">
-		<footer>
-			<span class="project-tag"> Tag 1 </span>
-		</footer>
+			<div class="project-tags">
+				<span class="project-tag">Tag</span>
+				<span class="project-tag">Tag</span>
+				<span class="project-tag">Tag</span>
+			</div>
+		</section>
 	</a>
-	</article>
+	
+	<a href="projects/project-profile.html?project=project-name">
+		<img src="images/placeholders/image.png" alt="img" class="project-icon">
+		<section class="project-description"><!-- SÓ APARECE QUANDO O MOUSE ESTÁ EM CIMA -->
+			<h2 class="project-name">
+				Título do Projeto
+			</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+				ex ea commodo consequat.
+			</p>
+			<div class="project-tags">
+				<span class="project-tag">Tag</span>
+				<span class="project-tag">Tag</span>
+				<span class="project-tag">Tag</span>
+			</div>
+		</section>
+	</a>
+	
+	<a href="projects/project-profile.html?project=project-name">
+		<img src="images/placeholders/image.png" alt="img" class="project-icon">
+		<section class="project-description"><!-- SÓ APARECE QUANDO O MOUSE ESTÁ EM CIMA -->
+			<h2 class="project-name">
+				Título do Projeto
+			</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+				ex ea commodo consequat.
+			</p>
+			<div class="project-tags">
+				<span class="project-tag">Tag</span>
+				<span class="project-tag">Tag</span>
+				<span class="project-tag">Tag</span>
+			</div>
+		</section>
+	</a>
+	
+</article>
 </section>
 
 <section id="social-section" class="social-banner section-parallax">

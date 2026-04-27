@@ -1,0 +1,171 @@
+#projects-section > *
+{
+	margin-top:     0;
+	margin-bottom:  0;
+	padding-top:    0;
+	padding-bottom: 0;
+}
+/* ========================================================================================== projects SECTION */
+
+#projects-section
+{
+	flex-direction: column;
+}
+
+.projects-banner
+{
+	font-size: 42px;
+	background-size: cover;
+	background-position: center;
+	height: 200px;
+	display: flex;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	align-items: center;
+	justify-content: center;
+	color: var(--color1);
+	text-align: center;
+	background-color: var(--color3);
+}
+
+.project-article::-webkit-scrollbar-thumb
+{
+	background: var(--color4);
+}
+
+.project-article
+{
+	display: column;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 40px;
+	padding: 60px 40px;
+	background: white;
+	width: 70%;
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: 0;
+	box-shadow: 0 30px 25px rgba(0,0,0,0.2);
+	
+	max-height: 400px;
+	overflow-y: auto;
+}
+
+.project-article a
+{
+	display: flex;
+	border-radius: 0;
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
+	gap: 10px;
+	padding: 15px;
+	transition: transform 0.3s ease;
+	border-bottom: 1px solid var(--color5);
+}
+
+.project-article a:hover
+{
+	transform: translateY(-5px);
+	border-radius: 8px;
+	background-color: var(--color3);
+	color: var(--color1);
+}
+
+.project-icon
+{
+	flex-shrink: 0;
+	width:  250px;
+	height: 180px;
+	overflow: hidden;
+	border-radius: 4px;
+}
+
+.project-icon img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.project-name
+{
+	font-size: 25px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.project-description
+{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	text-align: left;
+}
+.project-description p
+{
+	font-size: 18px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+    padding: 5px;
+    border-top: 2px solid var(--color4);
+    border-radius: 4px;
+    background-color: var(--color3);
+}
+
+.project-tag {
+    background-color: var(--color4);
+    color: var(--color1);
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+/* ========================================================================================== RESPONSIVIDADE (MOBILE) */
+
+@media (max-width: 700px)
+{
+	.project-article
+	{
+		width: 95%;
+		grid-template-columns: 1fr;
+		padding: 30px 15px;
+		gap: 20px;
+    }
+	
+	.project-article a
+    {
+		flex-direction: column;
+    }
+	
+	.project-icon
+	{
+		width: 120px;
+		height: 120px;
+	}
+	
+	.project-name
+	{
+		font-size: 25px;
+		text-align: center;
+		margin: 0;
+	}
+	
+	
+	
+	.projects-banner
+	{
+		font-size: 32px;
+		width: 95%;
+	}
+}

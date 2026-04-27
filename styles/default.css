@@ -71,6 +71,12 @@ section
 {
 	font-size:  32px;
 	text-align: center;
+	padding:    8px;
+}
+
+#page-title:hover
+{
+	background-color: var(--color3);
 }
 
 .menu-icon
@@ -158,7 +164,7 @@ section
 /* ========================================================================================== HERO/MAIN BANNER*/
 .hero-banner
 {
-	height:          60vh;
+	height:          75vh;
 	min-height:      200px;
 	display:         flex;
 	align-items:     center;
@@ -177,13 +183,19 @@ section
 {
 	color: var(--color1);
 	background-color: var(--color4);
-	padding: min(40px, 8%) min(60px, 12%) min(40px, 8%) min(60px, 12%);
+	padding: min(60px, 8%) min(80px, 12%) min(60px, 8%) min(80px, 12%);
 	border-radius: 5px;
+}
+
+.hero-banner-content h1
+{
+	font-size: 42px;
 }
 
 .hero-banner-content p
 {
-	padding-bottom: 12px;
+	padding-bottom: 24px;
+	font-size: 18px;
 }
 .hero-banner-content a
 {
